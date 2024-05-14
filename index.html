@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/700e467516.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="relative overflow-hidden w-screen h-screen slider-container">
+        <div class="h-full w-[35%] absolute top-[0] left-[0] [transition:transform_0.5s_ease-in-out] left_slide">
+            <div class="bg-red-700 h-full w-full flex flex-col items-center justify-center text-[#fff]">
+                <h1 class="text-[60px] mb-[10px] -mt-[30px]">Kathakali</h1>
+                <p>Kathakali is a blend of dance, music and acting and dramatizes stories,<br>which are mostly adapted from the Indian epics. It is a stylised <br>art form, the four aspects of abhinaya - angika, aharya,vachika, <br>satvika and the nritta, nritya and natya aspects are <br>combined perfectly.</p>
+            </div>
+            <div class="bg-orange-600 h-full w-full flex flex-col items-center justify-center text-[#fff]">
+                <h1 class="text-[60px] mb-[10px] -mt-[30px]">Bhangra-Gidhaa</h1>
+                <p class="m-5">KIt originated as a folk dance celebrated during the time <br>of the harvest. Bhangra is traditionally danced to the <br>dhol instrument, a large drum, and boliyan, short sets of lyrics <br>that describe scenes or stories from Punjab. These lyrics most <br>commonly reference themes of love, patriotism, strength, and celebration.</p>
+            </div>
+            <div class="bg-pink-500 h-full w-full flex flex-col items-center justify-center text-[#fff] right-slide">
+                <h1 class="text-[60px] mb-[10px] -mt-[30px]">Bharatnatyam</h1>
+                <p>Bharathanatyam is characterized by its distinctive movements,<br> hand gestures (mudras), and facial expressions. These <br> elements work together to convey stories, emotions, and ideas.
+                </p>
+            </div>
+            <div class="bg-red-900 h-full w-full flex flex-col items-center justify-center text-[#fff]">
+                <h1 class="text-[60px] mb-[10px] -mt-[30px]">Kathak</h1>
+                <p>Kathak dancers use a unique style of footwork that is <br> characterized by its intricate patterns and complex <br>rhythms. The footwork is often accompanied by the sound <br> of ghungroos, small ankle bells that are worn by the dancers.</p>
+            </div>
+        </div>
+        <div class="h-full absolute top-[0] left-[35%] w-[65%] [transition:transform_0.5s_ease-in-out] right_slide">
+            <div class="bg-[url('kathak.avif')] bg-no-repeat bg-cover bg-[center_center] h-full w-full"></div>
+            <div class="bg-[url('bharatnatyam.webp')] bg-no-repeat bg-cover bg-[center_center] h-full w-full"></div>
+            <div class="bg-[url('bhangra1.jpg')] bg-no-repeat bg-cover bg-[center_center] h-full w-full"></div>
+            <div class="bg-[url('kathakali2.avif')] bg-no-repeat bg-cover bg-[center_center] h-full w-full object-fill"></div>
+        </div>
+        <div class="action-button">
+            <button class="bg-[#fff] border-[none] text-[#aaa] cursor-pointer text-[16px] p-[15px] absolute left-[35%] top-2/4 -translate-x-full rounded-tl-[50%] rounded-bl-[50%] hover:text-[#222] focus:outline-[none] down-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="bg-[#fff] border-[none] text-[#aaa] cursor-pointer text-[16px] p-[15px] absolute left-[35%] top-2/4 -translate-y-full rounded-tr-[50%] rounded-br-[50%] hover:text-[#222] focus:outline-[none] up-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+    <script src="cutom.js"></script>
+</body>
+</html>
